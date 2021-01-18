@@ -15,7 +15,7 @@
 }
 
 .content__conteiner {
-  max-width: 1480px;
+  max-width: 1680px;
   margin: 0 auto;
 }
 html {
@@ -42,16 +42,20 @@ html {
 @keyframes colorChange {
   0% {
     background: $default-colorBlue;
+    box-shadow: 0 0 10px rgba($default-colorBlue, 0.9);
   }
   35% {
     background: #e3c74d;
+    box-shadow: 0 0 10px rgba(#e3c74d, 0.9);
   }
   75% {
     background: #e94c4f;
+    box-shadow: 0 0 10px rgba(#e94c4f, 0.9);
   }
 
   100% {
     background: $default-colorBlue;
+    box-shadow: 0 0 10px rgba($default-colorBlue, 0.9);
   }
 }
 
