@@ -1,0 +1,158 @@
+.left {
+  &__lastWork {
+    background-color: $background-color;
+    border-radius: $mainBorderRadius;
+    padding: 20px 0;
+    max-height: 535px;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__elements {
+      flex: 1 1 33.33%;
+      margin: 20px 10px 30px 0;
+      max-width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      transition: 1s;
+
+      &:hover {
+        max-width: 130px;
+        height: 130px;
+      }
+    }
+
+    &__dew {
+      background: url(../img/work/work1.png) no-repeat center / cover;
+    }
+
+    &__clothing {
+      background: url(../img/work/work2.png) no-repeat center / cover;
+    }
+
+    &__konstruct {
+      background: url(../img/work/work3.png) no-repeat center / cover;
+    }
+
+    &__yorker {
+      background: url(../img/work/work4.png) no-repeat center / cover;
+    }
+
+    &__freelancer {
+      background: url(../img/work/work5.png) no-repeat center / cover;
+    }
+
+    &__button {
+      background: url(../img/work/work6.png) no-repeat center / cover;
+    }
+  }
+
+  &__title {
+    font-family: $Gotham-Ultra;
+    font-size: 28px;
+    line-height: 1.63;
+    color: $default-white;
+    margin: 0 0 0 40px;
+  }
+}
+
+.spinner {
+  width: 102px;
+  height: 102px;
+  border: 5px inset $default-colorBlue;
+  border-radius: 50%;
+  animation: spin 120s linear infinite;
+  transition: 1s;
+
+  &:hover {
+    width: 132px;
+    height: 132px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(360deg);
+    border-color: #e3c74d;
+  }
+  // 35% {
+
+  // }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(360deg);
+    border-color: #e94c4f;
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(360deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .left {
+    &__lastWork {
+      margin: 0 0 20px;
+    }
+  }
+}
+
+@media (max-width: $phoneWidth) {
+  .left {
+    &__lastWork {
+      max-height: 1000px;
+    }
+  }
+}
+
+// .about{
+
+//     &__list{
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-around;
+
+//     }
+
+//     &__item{
+//         flex: 1 1 33.33%;
+//         margin: 0 10px 125px 0;
+//     }
+// }
+
+// @media (max-width: $phoneWidth){
+//     .about{
+//         &__list{
+//             display: block;
+//         }
+//     }
+// }

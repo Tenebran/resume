@@ -1,0 +1,72 @@
+.left__knowlage {
+  max-height: 425px;
+  background-color: $background-color;
+  border-radius: $mainBorderRadius;
+  padding: 20px;
+
+  &__title {
+    font-family: $Gotham;
+    font-size: 20px;
+    font-weight: $mainFontWeight;
+    line-height: 1.5;
+    color: $default-white;
+    margin: 10px 0 15px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__round {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    @include ChargeBackground;
+
+    &:not(:last-child) {
+      margin: 0 7px 0 0;
+    }
+  }
+
+  &__round2 {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $default-white;
+
+    &:not(:last-child) {
+      margin: 0 7px 0 0;
+    }
+  }
+}
+
+@media (max-width: $phoneWidth) {
+  .left__knowlage {
+    max-height: 800px;
+    &__round {
+      width: 10px;
+      height: 10px;
+      &:not(:last-child) {
+        margin: 0 3px 0 0;
+      }
+    }
+
+    &__round2 {
+      width: 10px;
+      height: 10px;
+
+      &:not(:last-child) {
+        margin: 0 3px 0 0;
+      }
+    }
+  }
+}

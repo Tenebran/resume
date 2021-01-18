@@ -1,0 +1,82 @@
+.right__wrapper {
+  &__skills {
+    font-family: $Gotham;
+    background-color: $background-color;
+    max-height: 900px;
+    border-radius: $mainBorderRadius;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+
+  &__contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 30px auto;
+  }
+  &__name {
+    font-family: $Gotham;
+    font-size: 20px;
+    margin: 0 0 25px 0;
+    font-weight: 500;
+    line-height: 1.27;
+    color: $default-white;
+  }
+  &__box {
+    margin: 0 auto;
+    width: 100%;
+    height: 20px;
+    background-color: $background-color;
+    border: 3px solid $default-colorBlue;
+    max-width: 800px;
+    border-radius: 20px;
+    overflow: hidden;
+    @include ChargeBorder;
+  }
+
+  &__html {
+    height: 100%;
+    width: 90%;
+    background-color: $default-colorBlue;
+    @include ChargeBackground;
+  }
+
+  &__css {
+    height: 100%;
+    width: 85%;
+    background-color: $default-colorBlue;
+    @include ChargeBackground;
+  }
+
+  &__scss {
+    height: 100%;
+    width: 85%;
+    background-color: $default-colorBlue;
+    @include ChargeBackground;
+  }
+
+  &__javaScript {
+    height: 100%;
+    width: 65%;
+    background-color: $default-colorBlue;
+    @include ChargeBackground;
+  }
+
+  &__bootstrap {
+    height: 100%;
+    width: 30%;
+    background-color: $default-colorBlue;
+    @include ChargeBackground;
+  }
+
+  &__git {
+    height: 100%;
+    width: 70%;
+    background-color: $default-colorBlue;
+    @include ChargeBackground;
+  }
+}

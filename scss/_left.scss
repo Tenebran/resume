@@ -1,0 +1,52 @@
+.left {
+  max-width: 500px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: $mainBorderRadius;
+    background-color: $background-color;
+    font-family: $Gotham;
+    color: $default-white;
+
+    &__title {
+      font-size: $standartFontSize;
+      font-weight: $mainFontWeight;
+      margin: 0 0 20px;
+      line-height: 1.63;
+    }
+
+    &__subtitle {
+      line-height: 1.37;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: $desktopWidth) {
+  .left {
+    max-width: 500px;
+    max-height: 2500px;
+    margin: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .left {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+
+    &__about {
+      margin: 0 0 20px;
+    }
+  }
+}

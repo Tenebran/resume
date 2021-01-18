@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Gotham-Ultra";
+  src: url("../font/Gotham-Ultra.woff2") format("woff2"),
+    url("../font/Gotham-Ultra.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../font/GothamOffice-Regular.woff2") format("woff2"),
+    url("../font/GothamOffice-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content__conteiner {
+  max-width: 1860px;
+  margin: 0 auto;
+}
+html {
+  box-sizing: border-box;
+}
+
+.wrapper__info {
+  display: flex;
+
+  // flex-wrap: wrap;
+  // justify-content: space-around;
+  // flex: 1 1 10%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes colorChange {
+  0% {
+    background: $default-colorBlue;
+  }
+  35% {
+    background: #e3c74d;
+  }
+  75% {
+    background: #e94c4f;
+  }
+
+  100% {
+    background: $default-colorBlue;
+  }
+}
+
+@keyframes colorText {
+  0% {
+    color: $default-colorBlue;
+  }
+  35% {
+    color: #e3c74d;
+  }
+  75% {
+    color: #e94c4f;
+  }
+  100% {
+    color: $default-colorBlue;
+  }
+}
+
+@keyframes colorBorder {
+  0% {
+    border-color: $default-colorBlue;
+  }
+  35% {
+    border-color: #e3c74d;
+  }
+  75% {
+    border-color: #e94c4f;
+  }
+  100% {
+    border-color: $default-colorBlue;
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .wrapper__info {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1 1 10%;
+  }
+}

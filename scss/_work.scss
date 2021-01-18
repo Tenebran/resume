@@ -1,0 +1,60 @@
+.right {
+  &__work {
+    background-color: $background-color;
+    border-radius: $mainBorderRadius;
+    margin: 20px 0 0 0;
+    padding: 30px;
+
+    &__wrapper {
+      &:not(:last-child) {
+        margin: 0 0 20px;
+      }
+    }
+    &__title {
+      font-family: $Gotham;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.21;
+      color: $default-colorBlue;
+      @include ChargeColor;
+    }
+
+    &__place {
+      color: $default-white;
+      font-weight: 300;
+    }
+
+    &__round {
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      margin: 0 10px 0 0;
+      background-color: $default-colorBlue;
+      @include ChargeBackground;
+    }
+
+    &__year {
+      font-family: $Gotham;
+      font-size: 21px;
+      font-weight: $mainFontWeight;
+      line-height: 1.51;
+      color: $default-white;
+      margin: 0 0 15px 35px;
+    }
+
+    &__subtitle {
+      font-family: $Gotham;
+      font-size: 18px;
+      line-height: 1.37;
+      color: $default-white;
+      margin: 0 0 0 35px;
+    }
+  }
+  &__work__experiences {
+    font-family: $Gotham-Ultra;
+    font-size: $standartFontSize;
+    line-height: 1.63;
+    color: $default-white;
+  }
+}
