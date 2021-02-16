@@ -11,10 +11,10 @@
     padding: 40px;
     border-radius: $mainBorderRadius;
     background-color: $background-color;
-    font-family: $Gotham;
     color: $default-white;
 
     &__title {
+      font-family: $Gotham-Ultra;
       font-size: $standartFontSize;
       font-weight: $mainFontWeight;
       margin: 0 0 20px;
@@ -22,6 +22,7 @@
     }
 
     &__subtitle {
+      font-family: $Gotham;
       line-height: 1.37;
       font-size: 18px;
     }
@@ -46,7 +47,7 @@
     margin: 0;
 
     &__about {
-      margin: 0 0 20px;
+      margin: 20px 0;
     }
   }
 }

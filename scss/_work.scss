@@ -58,3 +58,15 @@
     color: $default-white;
   }
 }
+
+@media (max-width: $tableWidth) {
+  .right {
+    &__work__subtitle {
+      font-size: 16px;
+      margin: 0;
+    }
+    &__work__experiences {
+      font-size: 26px;
+    }
+  }
+}

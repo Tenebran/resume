@@ -112,6 +112,32 @@
     &__info:last-child {
       line-height: 1.2;
     }
+
+    &__language {
+      display: flex;
+      justify-content: center;
+    }
+    &__lang {
+      margin: 40px 0 10px;
+      border: 2px solid;
+      font-weight: 900;
+      height: 60px;
+      width: 130px;
+      border-radius: 15px;
+      cursor: pointer;
+      background: linear-gradient(#273a57, #030303) #1c2630;
+
+      &:focus {
+        background: #1c2630;
+      }
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    // &__deutsch {
+    //   background: #000a13;
+    // }
   }
 
   &__git {
@@ -136,6 +162,10 @@
   }
 }
 
+.fa-map-pin {
+  margin: 0 5px 0 5px;
+}
+
 @media (max-width: $myDesktopWidth) {
   .resume {
     &__me {
@@ -154,6 +184,9 @@
       &__photo {
         margin: 0 auto;
       }
+    }
+    &__git {
+      font-size: 23px;
     }
   }
 }
@@ -175,8 +208,6 @@
 
     &__myContact {
       font-size: 18px;
-      display: flex;
-      flex-wrap: wrap;
     }
     &__git {
       font-size: 18px;
