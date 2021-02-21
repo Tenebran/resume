@@ -22,6 +22,7 @@
       &:hover {
         max-width: 130px;
         height: 130px;
+        background-position: contain;
       }
     }
 
@@ -47,6 +48,10 @@
 
     &__button {
       background: url(../img/work/work6.png) no-repeat center / cover;
+    }
+
+    &__go-surf {
+      background: url(../img/work/work7.png) no-repeat center / cover;
     }
   }
 
