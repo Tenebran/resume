@@ -18,8 +18,7 @@ window.addEventListener('load', () => {
   Ergebnisorientierter Frontend-Entwickler. Ich suche ein Unternehmen mit Aussicht auf Kompetenzentwicklung und Karrierewachstum.
     Ich bemühe mich, mich im Leben zu entwickeln. Ich mag das Gebiet der Computertechnologie und Programmierung sehr. Angezogen von der Möglichkeit, etwas Neues zu schaffen.`;
 
-  const aboutTextENG = ` Нацеленный на результат Frontend-разработчик. Ищу компанию с перспективой развития навыков и карьерного роста.
-  В жизни стремлюсь развиваться. Очень нравится сфера компьютерных технологий и программирования. Привлекает возможность создания чего-то нового.`;
+  const aboutTextENG = ` Result-oriented Frontend Developer. I am looking for a company with a perspective of skills development and career growth. I strive to develop in life. I really like the field of computer technology and programming. Attracted by the possibility of creating something new.`;
 
   let resume = document.querySelector('.resume');
   let language = document.querySelector('.resume__myContact__language');
