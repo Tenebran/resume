@@ -15,10 +15,9 @@ window.addEventListener('load', () => {
                         Entering with certain customer knowledge`;
 
   const aboutTextDeu = `
-  Ergebnisorientierter Frontend-Entwickler. Ich suche ein Unternehmen mit Aussicht auf Kompetenzentwicklung und Karrierewachstum.
-    Ich bemühe mich, mich im Leben zu entwickeln. Ich mag das Gebiet der Computertechnologie und Programmierung sehr. Angezogen von der Möglichkeit, etwas Neues zu schaffen.`;
+  Ich ziele auf das Ergebnis des Fronted-Developer. Ich suche ein Unternehmen, in dem ich eine Möglichkeit hätte, meine Fertigkeiten zu verbessern und in meiner Karriere aufzusteigen. Im Leben mache ich mein Bestes, um mich zu entwickeln. Ich mag den Bereich der Computertechnologien und Programmierung sehr. Mich zieht die Gelegenheit an, etwas Neues zu schaffen.`;
 
-  const aboutTextENG = ` Result-oriented Frontend Developer. I am looking for a company with a perspective of skills development and career growth. I strive to develop in life. I really like the field of computer technology and programming. Attracted by the possibility of creating something new.`;
+  const aboutTextENG = ` I aim at the result of Fronted-Developer. I am looking for a company, in which I would have a possibility to improve my skills and increase in my career. I aspire to develop in my life. I like the sphere of computer technologies and programming. The opportunity of creating something new attracts me`;
 
   let resume = document.querySelector('.resume');
   let language = document.querySelector('.resume__myContact__language');
